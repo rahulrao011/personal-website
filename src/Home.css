@@ -1,0 +1,100 @@
+.Home {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    position: relative;
+    font-family: "Space Mono", monospace;
+    z-index: 3;
+    width: fit-content;
+    margin: auto;
+    font-size: 5rem;
+}
+
+#cursorAura {
+    background-color: white;
+    background: linear-gradient(
+      to right,
+      deepskyblue,
+      blueviolet
+    );
+    height: 34vmax;
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    animation: rotate 20s infinite;
+    opacity: 0.8;
+  }
+  
+  @keyframes rotate {
+    0% {
+      rotate: 0deg;
+    }
+  
+    50% {
+      scale: 1 1.5;
+    }
+  
+    100% {
+      rotate: 360deg;
+    }
+  }
+  
+  #blur {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    backdrop-filter: blur(12vmax);
+    /*display: flex;*/
+  }
+
+#pic {
+  position: relative;
+  z-index: 10;
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+p {
+  color: white;
+  position: relative;
+  font-family: "Space Mono", monospace;
+  z-index: 3;
+  width: fit-content;
+  margin: auto;
+  font-size: 1rem;
+}
+
+
+
+
+#circle {
+    background: white;
+    height: 5vmax;
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    mix-blend-mode: difference;
+    display: none;
+}
+
+#projectsTitle:hover ~ #circle {
+    transform: scale(2);
+    display: block;
+}
