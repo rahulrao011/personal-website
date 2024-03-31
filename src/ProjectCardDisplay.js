@@ -7,7 +7,7 @@ function ProjectCardDisplay(props) {
     return (
         <div className="projectCardDisplay">
             {projects.map((project) => (
-                <ProjectCard key={project.id} idVal={project.id} image={project.image} title={project.title} text={project.text} link={project.link}/>
+                <ProjectCard key={project.id} idVal={project.id} image={project.image} title={project.title} text={project.text} demoLink={project.demoLink} githubLink={project.githubLink}/>
             ))}
         </div>
     );

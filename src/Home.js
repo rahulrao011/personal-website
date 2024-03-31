@@ -64,7 +64,10 @@ function Home() {
         }
       }, []);
 
-      let projects = [{id: 1, image: 'logo192.png', title: 'Title 1', text: 'Text 1', link: 'https://www.google.com/'}, {id: 2, image: 'logo512.png', title: 'Title 2', text: 'Text 2', link: 'https://www.tesla.com/'}];
+      let projects = [
+        {id: 1, image: 'event_meetup_logo.png', title: 'Event Meetup App', text: 'College students use this app to find events and meet new people', demoLink: 'https://kickbackkraze.onrender.com', githubLink: 'https://github.com/rahulrao011/EventMeetup'},
+        {id: 2, image: 'R_Logo.png', title: 'Under Construction', text: 'Text 2', link: ''}
+      ];
 
     return (
         <div className="Home">
