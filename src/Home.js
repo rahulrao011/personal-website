@@ -57,7 +57,7 @@ function Home() {
           cursor.style.top = `${clientY}px`;
 
           cursorAura.animate({
-            left: `${clientX}px`,
+            left: `${clientX}px`, 
             top: `${clientY}px`,
           }, {duration: 3000, fill: "forwards"}
           );
